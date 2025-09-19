@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Réseaux - dylan_Bklf34</title>
+    <title>dylan_Bklf34</title>
     <style>
         * {
             margin: 0;
@@ -11,158 +11,129 @@
             box-sizing: border-box;
         }
 
-        @keyframes gradient {
-            0% {
-                background-position: 0% 50%;
-            }
-            50% {
-                background-position: 100% 50%;
-            }
-            100% {
-                background-position: 0% 50%;
-            }
-        }
-
         body {
-            font-family: 'Poppins', sans-serif;
-            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-            background-size: 400% 400%;
-            animation: gradient 15s ease infinite;
+            font-family: 'Inter', sans-serif;
+            background: #000;
+            color: white;
             min-height: 100vh;
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            padding: 40px 20px;
-            color: white;
+            padding: 20px;
         }
 
-        .container {
-            max-width: 800px;
+        .card {
             width: 100%;
-            background: rgba(255, 255, 255, 0.1);
-            backdrop-filter: blur(10px);
-            padding: 40px;
-            border-radius: 30px;
-            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 450px;
+            background: #111;
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);
         }
 
-        .logo {
-            width: 150px;
-            height: 150px;
-            border-radius: 30px;
-            border: 3px solid rgba(255, 255, 255, 0.3);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-            margin-bottom: 30px;
-            transition: transform 0.3s ease;
-            object-fit: cover;
+        .profile {
+            text-align: center;
+            margin-bottom: 35px;
         }
 
-        .logo:hover {
-            transform: scale(1.05);
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            border: 3px solid #333;
         }
 
-        h1 {
-            font-size: 2.5em;
-            margin: 20px 0;
-            font-weight: 600;
-            letter-spacing: 1px;
+        .profile h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 8px;
         }
 
-        .links {
+        .profile p {
+            color: #888;
+            font-size: 15px;
+        }
+
+        .social-links {
             display: grid;
-            gap: 15px;
-            width: 100%;
-            max-width: 400px;
-            margin: 0 auto;
+            gap: 12px;
         }
 
-        .links a {
+        .social-btn {
             display: flex;
             align-items: center;
-            padding: 16px 25px;
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
+            padding: 16px;
+            border-radius: 14px;
             text-decoration: none;
             color: white;
             font-weight: 500;
-            transition: all 0.3s ease;
-            border: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 16px;
+            transition: transform 0.2s;
+            border: 1px solid #222;
         }
 
-        .links a:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        .social-btn:hover {
+            transform: translateY(-2px);
         }
 
-        .links a img {
-            width: 25px;
-            height: 25px;
-            margin-right: 15px;
-            filter: brightness(0) invert(1);
-            transition: transform 0.3s ease;
+        .social-btn img {
+            width: 24px;
+            height: 24px;
+            margin-right: 12px;
         }
 
-        .links a:hover img {
-            transform: scale(1.1) rotate(5deg);
+        .youtube { background: #FF0000; }
+        .tiktok { background: #000000; border: 1px solid #333; }
+        .instagram { 
+            background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
         }
+        .snapchat { background: #FFFC00; color: black; }
+        .spotify { background: #1DB954; }
+        .discord { background: #5865F2; }
+        .facebook { background: #1877F2; }
 
         @media (max-width: 480px) {
-            .container {
-                padding: 25px;
-            }
-
-            .logo {
-                width: 120px;
-                height: 120px;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            .links a {
-                padding: 14px 20px;
+            .card {
+                padding: 24px;
             }
         }
     </style>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <img src="https://p16-pu-sign-no.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/7ee404a08867d3fa1e8fbf2e962d8682~tplv-tiktokx-cropcenter:1080:1080.jpeg?dr=10399&refresh_token=601ec7f3&x-expires=1743919200&x-signature=B4UT9Ja956JCoFaQUWHm%2FGmR5AQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=81f88b70&idc=no1a" alt="Logo TikTok" class="logo">
-        <h1>Mes Réseaux</h1>
-        <div class="links">
-            <a href="https://www.youtube.com/@dylan_bklf34" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube">
+    <div class="card">
+        <div class="profile">
+            <img class="profile-img" src="https://p16-pu-sign-no.tiktokcdn-eu.com/tos-no1a-avt-0068c001-no/7ee404a08867d3fa1e8fbf2e962d8682~tplv-tiktokx-cropcenter:1080:1080.jpeg" alt="Profile">
+            <h1>dylan_Bklf34</h1>
+            <p>Créateur de contenu</p>
+        </div>
+
+        <div class="social-links">
+            <a href="https://www.youtube.com/@dylan_bklf34" class="social-btn youtube">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cGF0aCBkPSJNMjIuNTQgNi40MkMyMi4zNCA1LjU4IDIxLjcgNC45MyAyMC44NiA0LjczQzE5LjE2IDQuMjUgMTIgNC4yNSAxMiA0LjI1QzEyIDQuMjUgNC44NCA0LjI1IDMuMTQgNC43M0MyLjMgNC45MyAxLjY2IDUuNTggMS40NiA2LjQyQzEgOC4xMiAxIDEyIDEgMTJDMSAxMiAxIDEzLjg4IDEuNDYgMTUuNThDMS42NiAxNi40MiAyLjMgMTcuMDcgMy4xNCAxNy4yN0M0Ljg0IDE3Ljc1IDEyIDE3Ljc1IDEyIDE3Ljc1QzEyIDE3Ljc1IDE5LjE2IDE3Ljc1IDIwLjg2IDE3LjI3QzIxLjcgMTcuMDcgMjIuMzQgMTYuNDIgMjIuNTQgMTUuNThDMjMgMTMuODggMjMgMTIgMjMgMTJDMjMgMTIgMjMgOC4xMiAyMi41NCA2LjQyWiIvPjxwb2x5Z29uIHBvaW50cz0iMTAgMTUgMTUgMTIgMTAgOSIgZmlsbD0iI2ZmZmZmZiIvPjwvc3ZnPg==" alt="YouTube">
                 YouTube
             </a>
-            <a href="https://www.tiktok.com/@dylan_bkfl34" target="_blank">
-                <img src="https://thumbs.dreamstime.com/b/logo-de-tik-tok-signe-des-m%C3%A9dias-sociaux-ic%C3%B4ne-sur-le-vecteur-transparence-fond-courant-transparent-193620468.jpg" alt="TikTok">
+
+            <a href="https://www.tiktok.com/@dylan_bkfl34" class="social-btn tiktok">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjZmZmZmZmIj48cGF0aCBkPSJNMTYuNiA1Ljgycy0uMyAyLjUgMi40IDIuNXYyLjdjLS4zIDAtLjYgMC0uOSAwLTEuNiAwLTMtLjQtNC4zLTEuMnY2LjRjMCAzLjItMi42IDUuOC01LjggNS44LTEuNiAwLTMuMS0uNi00LjItMS43IDEuNiAxLjYgNC4yIDEuNiA1LjggMCAyLjMtMi4zIDItNi0uMy04LjItLjctLjctMS43LTEuMi0yLjctMS4ydi0yLjhjLjMgMCAuNiAwIC45IDBDMTEuNCA4LjIgMTYuNiA4LjkgMTYuNiA1LjgyeiIvPjwvc3ZnPg==" alt="TikTok">
                 TikTok
             </a>
-            <a href="https://www.instagram.com/dylan_bkfl34/" target="_blank">
-                <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+
+            <a href="https://www.instagram.com/dylan_bkfl34/" class="social-btn instagram">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiNmZmZmZmYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIj48cmVjdCB4PSIyIiB5PSIyIiB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHJ4PSI1IiByeT0iNSIvPjxwYXRoIGQ9Ik0xNiAxMS4zN0ExIDEgMCAxIDEgMTcgMTIgMSAxIDAgMCAxIDE2IDExLjM3eiIvPjxwYXRoIGQ9Ik0xNy41IDYuNWgtMTF2MTFoMTF6Ii8+PC9zdmc+" alt="Instagram">
                 Instagram
             </a>
-            <a href="https://snapchat.com/t/x4yWISzW" target="_blank">
-                <img src="https://static.vecteezy.com/system/resources/previews/018/930/694/non_2x/snapchat-logo-snapchat-icon-transparent-free-png.png" alt="Snapchat">
+
+            <a href="https://snapchat.com/t/x4yWISzW" class="social-btn snapchat">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjMDAwMDAwIj48cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptNi44MyAxNC4xNGMtLjA1LjEyLS4xMy4yMy0uMjQuMzItLjExLjA5LS4yNC4xNi0uMzkuMjEtLjE0LjA0LS4yOS4wNi0uNDQuMDYtLjE1IDAtLjI5LS4wMi0uNDMtLjA3LS4xNC0uMDQtLjI3LS4xLS4zOC0uMTgtLjExLS4wOC0uMi0uMTgtLjI3LS4zLS4wNy0uMTItLjExLS4yNi0uMTEtLjQxIDAtLjE1LjA0LS4yOS4xMS0uNDEuMDctLjEyLjE2LS4yMi4yNy0uMy4xMS0uMDguMjQtLjE0LjM4LS4xOC4xNC0uMDQuMjgtLjA3LjQzLS4wNy4xNSAwIC4zLjAyLjQ0LjA2LjE1LjA0LjI4LjExLjM5LjIxLjExLjA5LjE5LjIuMjQuMzIuMDUuMTIuMDguMjUuMDguMzkgMCAuMTQtLjAzLjI3LS4wOC4zOXoiLz48L3N2Zz4=" alt="Snapchat">
                 Snapchat
             </a>
-            <a href="https://open.spotify.com/user/31hy2egip2gvaee6xiliwt7odiky?si=2da5ce02d1d347f9" target="_blank">
-                <img src="https://i.pinimg.com/736x/e1/92/4e/e1924e2d71900848f3a411a83b027415.jpg" alt="Spotify">
+
+            <a href="https://open.spotify.com/user/31hy2egip2gvaee6xiliwt7odiky" class="social-btn spotify">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjZmZmZmZmIj48cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptNC42NyAxNC41OWMtLjE5LjMtLjYuMy0uNzkgMC0yLjE5LTMuNDMtNi4yOS0zLjkzLTguNC0zLjkzLS4yIDAtLjM5LS4xNy0uMzktLjM5cy4xNy0uMzkuMzktLjM5YzIuNTggMCA3LjIyLjY3IDkuNTkgNC43MS4wNi4xMS4wNi4yMiAwIC4zM3oiLz48L3N2Zz4=" alt="Spotify">
                 Spotify
             </a>
-            <a href="https://discord.gg/r5pGYvU6Bb" target="_blank">
-                <img src="https://w7.pngwing.com/pngs/1023/637/png-transparent-discord-hd-logo.png" alt="Discord">
-                Discord
-            </a>
-            <a href="https://www.facebook.com/share/19MxvEnnX6/?mibextid=wwXIfr" target="_blank">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
-                Facebook
-            </a>
-        </div>
-    </div>
-</body>
-</html>
+
+            <a href="https://discord.gg/r5pGYvU6Bb" class="social-btn discord">
+                <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSIjZmZmZmZmIj48cGF0aCBkPSJNMjAuMzE3IDQuMzY5OGMtMS40NDctLjY2NS0yLjk5Ni0xLjE1Mi00LjYxNy0xLjQyOWEuMDYyLjA2MiAwIDAwLS4wNjYuMDMxYy0uMTc1LjMxMS0uMzcuNzE4LS41MDYgMS4wMzktMS41NDgtLjIzMi0zLjA4Ni0uMjMyLTQuNjI0IDAtLjEzOS0uMzMzLS4zMzMtLjcyOC0uNTA4LTEuMDM5YS4
